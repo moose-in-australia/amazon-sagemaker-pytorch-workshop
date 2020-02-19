@@ -43,8 +43,8 @@ Follow the instructions below to set up the workshop manually in your AWS accoun
 1. Choose instance type "ml.t2.medium".
 1. Leave the rest of the notebook instance settings as default.
 1. Choose an IAM role for the notebook
-  * Feel free to reuse an existing IAM role if one exists in your account.
-  * Choose "Create a new role" from the drop-down menu, then choose the "Any S3 bucket" option in the corresponding menu.
+    * Feel free to reuse an existing IAM role if one exists in your account.
+    * Choose "Create a new role" from the drop-down menu, then choose the "Any S3 bucket" option in the corresponding menu.
 9. Expand the "Github repositories - optional" tab.
 9. Choose "Clone a public Git repository to this notebook instance only" from the drop-down menu.
 9. Insert `https://github.com/moose-in-australia/amazon-sagemaker-pytorch-workshop.git` as the Git repository URL.
