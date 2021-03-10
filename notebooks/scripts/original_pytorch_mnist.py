@@ -14,6 +14,17 @@ can be found here: https://github.com/pytorch/examples/blob/master/mnist/main.py
 """
 
 
+# -------------------------------
+# This is code snippet is needed temporarily until a fix is released in PyTorch
+# for downloading the MNIST dataset. (https://github.com/pytorch/vision/issues/1938)
+# Reminder to self to check again in a few months and remove this if possible.
+from six.moves import urllib
+opener = urllib.request.build_opener()
+opener.addheaders = [('User-agent', 'Mozilla/5.0')]
+urllib.request.install_opener(opener)
+# -------------------------------
+
+
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
